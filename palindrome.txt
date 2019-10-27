@@ -14,14 +14,14 @@ class ArmstrongNumber
      
       // Count number of digits
      
-      while (temp != 0) {
+      while (temp != 1) {
          digits++;
          temp = temp/10;
       }
  
       temp = n;
  
-      while (temp != 0) {
+      while (temp != 1) {
          remainder = temp%10;
          sum = sum + power(remainder, digits);
          temp = temp/10;
@@ -32,8 +32,10 @@ class ArmstrongNumber
       else
          System.out.println(n + " isn't an Armstrong number.");        
    }
-   
-   static int power(int n, int r) {
+  000 
+   static int power(int n, int r)//function 2
+ 
+{
       int c, p = 1;
  
       for (c = 1; c <= r; c++)
